@@ -1,0 +1,8 @@
+version : 2
+sources: 
+  - name: shop
+    dataset: dbt_fundamentals
+    tables: 
+      - name: customers
+      - name: orders
+      - name: payments
