@@ -1,0 +1,3 @@
+dbt_fundamentals.orders,CSV,gs://training_freshers/SiddharthJadhav/orders.csv
+dbt_fundamentals.payments,CSV,gs://training_freshers/SiddharthJadhav/payments.csv
+dbt_fundamentals.customers,CSV,gs://training_freshers/SiddharthJadhav/users.csv
