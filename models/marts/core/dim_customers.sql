@@ -1,3 +1,7 @@
+/* Problem Statement - Create a table which will give customer details along with the first_order_date, recent_order_date
+number_of_orders and lifetime_value*/
+
+
 with customers as (
     select * from {{ ref('stg_customers')}}
 ),

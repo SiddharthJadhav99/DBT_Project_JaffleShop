@@ -1,10 +1,9 @@
 with customers as (
-select
+select distinct
     ID as customer_id,
-    FIRST_NAME,
-    LAST_NAME,
+    FIRST_NAME as first_name,
+    LAST_NAME as last_name,
 
-    from dbt_fundamentals.customers
-
+    from {{source("shop", "customers")}}
 )
 select * from customers

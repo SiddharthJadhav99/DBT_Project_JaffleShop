@@ -5,6 +5,6 @@ with orders as(
         order_date,
         status
     from {{source("shop", "orders")}}
+    where id != 0 and user_id != 0 and string(order_date) != 'null' and status != 'null'
 )
-
 select * from orders
